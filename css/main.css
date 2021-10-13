@@ -1,0 +1,252 @@
+/* Fonts
+******************************/
+@font-face {
+    font-family: "Girassol";
+    src: url(fonts/Girassol/Girassol-Regular.ttf); /* Relative path */
+}
+
+/* Global
+******************************/
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 96px;
+    min-height: 100%;
+
+    background-color: #FEECEC;
+    color: #343434;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.25;
+}
+
+html{
+    height: 100%;
+}
+
+/* Header
+******************************/
+header, h1, h2 {
+    font-family: 'Girassol', sans-serif;
+    text-align: center;
+
+}
+header h1 {
+    margin-top: 0;
+}
+
+/* Browser Interactions
+******************************/
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar{
+    display: none; /* Chrome, Safari and Opera */
+}
+
+/* Navigation Bar
+******************************/
+nav {
+    background-color: #875A70;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+
+    position: relative;
+
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #875A70;
+}
+
+.navbar li .no-padding {
+    padding: 0px;
+}
+
+.navbar  li {
+    display: inline;
+    /* width: 110px; */
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}   
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #875A70;
+}
+
+.navbar li:hover {
+    background-color: #C6A9B7;
+    border-radius: 3px;
+    border:solid white 2px;
+}
+
+.navbar .nav-img-hover:hover {
+    background-color: transparent;
+    border:none;
+}
+.navbar .nav-img-hover {
+    background-color: transparent;
+    border:none;
+    padding-left:0;
+}
+
+.navbar-logo {
+    display: flex;
+    width: 50px;
+    border: solid white 3px;
+    border-radius: 5px;
+}
+
+nav .flex-container {
+    margin: 0px;
+    align-items: baseline;
+}
+
+.flex-item-nav {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+
+/* Footer
+******************************/
+footer {
+    background-color: #875A70;
+    color: white;
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer ul {
+    padding-left:0px;
+}
+
+.flex-item-footer {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+footer .flex-container {
+    margin: 0;
+}
+
+/* Index
+******************************/
+.mrhelp-me a {
+    background-color: #875A70 ;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.mrhelp-me a:hover {
+    background-color: #B691A3;
+    border:solid white 2px;
+}
+
+.image-mrhelp-me {
+    background-image: url(../images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-item  img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.flex-item img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+.body-details {
+    border: solid black 2px;
+    padding-left: 5px;
+}
+
+.body-description {
+    border: solid black 2px;
+    padding-left: 5px;
+}
+
+/* Flexbox 
+******************************/
+.wrapper {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1100px;
+    background-color: #C6A9B7;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border: solid black 2px;
+}
+
+.flex-container {
+    display: flex;
+    margin: 7px;
+    border: solid black 2px;
+}
+.flex-container h2 {
+    text-align: center;
+}
+
+.flex-item {
+    flex: 1 1 400px;
+    margin: 2px;
+}
+
+/* Media Queries
+******************************/
+@media screen and (max-width: 750px)
+{
+    body {
+        font-size: 12px;
+    }
+
+    .navbar img {
+        width:28px;
+    }
+
+    footer {
+        height: 69px;
+    }
+}
