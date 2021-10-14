@@ -57,7 +57,7 @@ body::-webkit-scrollbar{
 }
 
 nav {
-    background-color: #875A70;
+    background-color: #3D4351;
 }
 
 .navbar {
@@ -72,7 +72,7 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
 
-    background-color: #875A70;
+    background-color: #3D4351;
 }
 
 .navbar li .no-padding {
@@ -85,7 +85,7 @@ nav {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 0px;
+    padding-top: 2px;
     padding-bottom: 0px;
 }   
 
@@ -103,7 +103,7 @@ nav {
 .navbar li:hover {
     background-color: #C6A9B7;
     border-radius: 3px;
-    border:solid white 2px;
+    border:solid white 1px;
 }
 
 .navbar .nav-img-hover:hover {
@@ -117,7 +117,7 @@ nav {
 }
 
 .navbar-logo {
-    background-image: url(../images/robot.jpg);
+    /* background-image: url(../images/robot.jpg); */
     display: flex;
     width: 50px;
     border: solid white 3px;
@@ -140,7 +140,7 @@ nav .flex-container {
 /* Footer
 ******************************/
 footer {
-    background-color: #875A70;
+    background-color: #3D4351;
     color: white;
     width: 100%;
     /* height: 96px; */
@@ -192,8 +192,16 @@ footer .flex-container {
     background-position: center;
 }
 
+.index-image-mrhelp-me {
+    background-image: url(../images/robot.jpg);
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
 .body-item {
     display: grid;
+    /* background-color: #DBD3D1; */
     background-color: #DBD3D1;
     margin: 5px;
     grid-template-columns: 1fr 2fr;
@@ -202,6 +210,7 @@ footer .flex-container {
 
 .body-modules{
     display: grid;
+    /* background-color: #DBD3D1; */
     background-color: #DBD3D1;
     margin: 5px;
     grid-template-columns:1fr 1fr 1fr;
