@@ -50,6 +50,12 @@ body::-webkit-scrollbar{
 
 /* Navigation Bar
 ******************************/
+
+.disabled {
+    pointer-events:none;
+    opacity:0.6;         
+}
+
 nav {
     background-color: #875A70;
 }
@@ -111,6 +117,7 @@ nav {
 }
 
 .navbar-logo {
+    background-image: url(../images/robot.jpg);
     display: flex;
     width: 50px;
     border: solid white 3px;
@@ -136,7 +143,7 @@ footer {
     background-color: #875A70;
     color: white;
     width: 100%;
-    height: 96px;
+    /* height: 96px; */
     position: absolute;
     bottom: 0px;
 }
@@ -162,6 +169,10 @@ footer .flex-container {
 
 /* Index
 ******************************/
+.mrhelp-me a:active {
+    color: crimson;
+}
+
 .mrhelp-me a {
     background-color: #875A70 ;
     color: white;
@@ -175,10 +186,26 @@ footer .flex-container {
 }
 
 .image-mrhelp-me {
-    background-image: url(../images/img1.jpg);
+    background-image: url(../images/robot.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.body-item {
+    display: grid;
+    background-color: #DBD3D1;
+    margin: 5px;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5px;
+}
+
+.body-modules{
+    display: grid;
+    background-color: #DBD3D1;
+    margin: 5px;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 5px;
 }
 
 .body-item  img {
@@ -193,6 +220,11 @@ footer .flex-container {
     max-height: 100%;
 }
 
+.body-result {
+    /* grid-template-columns: 2fr 1fr; */
+    /* padding-left: 5px; */
+    grid-template-columns: 1fr;
+}
 
 .body-details {
     border: solid black 2px;
